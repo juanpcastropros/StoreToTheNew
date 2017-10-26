@@ -1,0 +1,28 @@
+﻿@using BusinessCore;
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Store to the New</h1>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <p>
+           
+        </p>
+        <p>The application uses SQL Database and Azure storage queues and blobs.</p>
+        <p>To get started just take action!</p>
+
+        <h2>Category</h2>
+        <p>@Html.ActionLink("Categories", "Index", "Category", null, null)</p>
+        <p><a class="btn btn-default" href="@Url.Action("Create","Category")">Create a Category</a></p>
+        <h2>Store</h2>
+        <p>@Html.ActionLink("Store", "Index", "Store", null, null)</p>
+        <p><a class="btn btn-default" href="@Url.Action("Create","Store")">Create a Store</a></p>
+        <h2>Product</h2>
+        <p>@Html.ActionLink("Product", "Index", "Store", null, null)</p>
+        <p><a class="btn btn-default" href="@Url.Action("Create","Product")">Create a Product</a></p>
+    </div>
+</div>
